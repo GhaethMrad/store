@@ -1,7 +1,7 @@
 export function useToast() {
   
   return {
-    toast: ({ title, description, variant }: { title: string; description?: string; variant?: string }) => {
+    toast: ({ title, description }: { title: string; description?: string; variant?: string }) => {
       alert(`${title}: ${description ?? ''}`);
     },
   };

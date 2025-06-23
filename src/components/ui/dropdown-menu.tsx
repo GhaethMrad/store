@@ -9,7 +9,7 @@ export function DropdownMenu({ className, ...props }: DropdownMenuProps) {
   return <div className={cn("relative", className)} {...props} />;
 }
 
-export function DropdownMenuTrigger({ asChild, children }: { asChild?: boolean; children: React.ReactNode }) {
+export function DropdownMenuTrigger({ children }: { asChild?: boolean; children: React.ReactNode }) {
   return <div>{children}</div>;
 }
 
