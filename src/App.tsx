@@ -3,6 +3,7 @@ import "./App.css";
 import {
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import NavigationBar from "./components/NavigationBar";
@@ -22,7 +23,7 @@ function App() {
         <NavigationBar />
         <div className="container mx-auto py-6">
           <Routes>
-            <Route path="/" element={<ProductsPage />} />
+            <Route path="/" element={<Navigate to="/products" replace />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/cart" element={<CartPage />} />
           </Routes>
