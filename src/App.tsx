@@ -23,7 +23,7 @@ function App() {
         <NavigationBar />
         <div className="container mx-auto py-6">
           <Routes>
-            <Route path="/" element={<Navigate to="/products" replace />} />
+            <Route path="/" element={<ProductsPage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/cart" element={<CartPage />} />
           </Routes>
